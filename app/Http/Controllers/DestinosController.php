@@ -50,7 +50,7 @@ class DestinosController extends Controller
         return redirect()->route("consultade")->with('mensaje', 'Se actualizó correctamente');
     }
 
-    public function eliminarde($id)
+    public function deletede($id)
     {
         $destino = destinos::find($id);
         $destino->delete();
